@@ -1,0 +1,19 @@
+{
+  "name": "client-server-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm run dev --prefix server",
+    "client": "npm run start --prefix client",
+    "dev": "SERVER_PORT=5000 PORT=4999 concurrently -n server,client -c red,green \"npm run server\" \"npm run client\" ",
+    "deploy": "npm run build --prefix client && npm run start --prefix server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
