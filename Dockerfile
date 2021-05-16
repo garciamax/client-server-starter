@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm i --prefix client && npm i --prefix server
+RUN npm run install-client-server
 
-CMD ["npm", "run", "deploy"]
+RUN npm run build-client
+
+CMD ["npm", "run", "deploy-server"]

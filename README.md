@@ -9,6 +9,7 @@
 
 ## how to use
 
+1. `> npx degit git@github.com:garciamax/client-server-starter.git`
 1. `> npm i && npm i --prefix client && npm i --prefix server`
 1. `> npm run dev`
 
