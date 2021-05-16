@@ -9,5 +9,10 @@
 
 ## how to use
 
-1. npm i && npm i --prefix client && npm i --prefix server
-1. npm run dev
+1. `> npm i && npm i --prefix client && npm i --prefix server`
+1. `> npm run dev`
+
+# Docker deploy
+
+1. `> docker build . -t client-server-starter`
+1. `> docker run --name client-server-starter -p 5000:5000 client-server-starter`
